@@ -18,7 +18,13 @@ module.exports = {
         exclude: /node_modules/, // excluding the node_modules folder
         use: {
           loader: "babel-loader",
-        },
+          options: {
+            presets: [
+              ['@babel/preset-env', { targets: "defaults" }], 
+              "@babel/preset-react"
+            ]
+          }
+        }
       },
       {
         test: /\.(sa|sc|c)ss$/, // styles files
