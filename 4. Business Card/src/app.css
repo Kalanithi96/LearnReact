@@ -1,13 +1,13 @@
 *{
-    
     margin: 0;
 }
 
 body{
-    margin: 3% 30%;
     padding:0;
+    width: 60%;
     background-color: black;
     color: white;
+    margin: 5% 20%;
 }
 
 .container{
@@ -23,7 +23,7 @@ body{
 }
 
 img{
-    height: 15vh;
+    height: 5vh;
 }
 
 h1, h3, h4{
@@ -43,9 +43,11 @@ h1, h3, h4{
 }
 
 .footer-list{
+    padding-left: 40px;
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0% 35%;
 }
 
 p{
@@ -53,3 +55,6 @@ p{
     text-indent: 20px;
 }
 
+.footer-icon{
+    size: 10px;
+}

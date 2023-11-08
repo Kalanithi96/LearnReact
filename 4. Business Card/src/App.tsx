@@ -1,9 +1,13 @@
 import logo from "./Yin_yang.svg";
+import fb from "./fb.png";
+import gh from "./gh.png";
+import insta from "./insta.png";
+import twitter from "./twitter.png";
 import "./app.css";
 
 function Header(){
   return <div className="head">
-    <img src={logo}/>
+    <img className="header-img" src={logo}/>
   </div>
 }
 
@@ -25,10 +29,10 @@ function Body(){
 
 function Footer(){
   return <ul className="footer-list">
-    <li>Instagram</li>
-    <li>Facebook</li>
-    <li>Twitter</li>
-    <li>GitHub</li>
+    <li><img src={fb} className="footer-icon"/></li>
+    <li><img src={gh} className="footer-icon"/></li>
+    <li><img src={twitter} className="footer-icon"/></li>
+    <li><img src={insta} className="footer-icon"/></li>
   </ul>
 }
 
