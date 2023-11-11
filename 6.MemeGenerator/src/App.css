@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+body{
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    height: 6em;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    padding: 20px;
+}
+
+.header--image{
+    margin-right: 16px;
+    height: 100%;
+}
+
+.header--title{
+    font-size: 2rem;
+    margin-right: auto;
+}
+
+.header--project{
+    font-size:1.5rem;
+    font-weight: 500;
+}
