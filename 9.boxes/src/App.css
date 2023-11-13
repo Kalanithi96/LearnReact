@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.box{
+    border: 1px black solid;
+    border-radius: 5px;
+    color: black;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 1px;
+}
