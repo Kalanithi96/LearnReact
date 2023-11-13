@@ -6,12 +6,12 @@ function App() {
   useEffect(()=>{
     fetch("https://swapi.dev/api/people/1")
       .then(res=>res.json())
-      .then(data=>setStarWarsData(JSON.stringify(data)))
+      .then(data=>setStarWarsData((data)))
   }, [starWarsData])
 
   return (
     <>
-      <p>{JSON.stringify(starWarsData,null,2)}</p>
+      <pre>{JSON.stringify(starWarsData,null,2)}</pre>
     </>    
   )
 }
