@@ -7,7 +7,7 @@ function App() {
     fetch("https://swapi.dev/api/people/1")
       .then(res=>res.json())
       .then(data=>setStarWarsData((data)))
-  }, [starWarsData])
+  }, [])
 
   return (
     <>
