@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./components/Header";
+import Content from "./components/Content";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <Header value={isDarkMode} handleChange={handleChange} />
+      <Content />
     </>
   );
 }
