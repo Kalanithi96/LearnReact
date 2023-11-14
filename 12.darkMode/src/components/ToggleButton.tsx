@@ -11,8 +11,16 @@ export default function ToggleButton(props: {
         type="checkbox"
         checked={props.value}
         onChange={props.handleChange}
+        className="toggle--button"
+        id="toggle"
       />
+      <label htmlFor="toggle"></label>
       <p>{props.option2}</p>
     </div>
   );
+}
+{
+    /*
+        Credits to https://www.youtube.com/watch?v=N8BZvfRD_eU for toggle button.
+    */
 }
