@@ -53,3 +53,34 @@ body{
 main{
     padding: 36px 20%;
 }
+
+.meme--container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.meme--text{
+    color: white;
+    text-decoration-style: solid;
+    font-size: larger;
+    font-weight: 700;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+}
+
+.top-text{
+    top:1em;
+}
+
+.bottom-text{
+    top:22em;
+}
+
+.meme--image{
+    position: absolute;
+    width: 100%;
+    margin-top: 0.5em;
+}
