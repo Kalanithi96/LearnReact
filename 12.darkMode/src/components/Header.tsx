@@ -1,4 +1,5 @@
 import ToggleButton from "./ToggleButton";
+import react from "./../assets/react.svg";
 
 export default function Header(props: {
   value: boolean;
@@ -7,7 +8,7 @@ export default function Header(props: {
   return (
     <header>
       <nav>
-        <img src=""></img>
+        <img src={react}></img>
         <h2>React Facts</h2>
         <ToggleButton
           option1="Light"
