@@ -7,8 +7,8 @@ export default function Header(props: {
 }) {
   return (
     <header>
-      <nav>
-        <img src={react}></img>
+      <nav className="navbar">
+        <img src={react}/>
         <h2>React Facts</h2>
         <ToggleButton
           option1="Light"
