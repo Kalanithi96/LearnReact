@@ -16,3 +16,8 @@
 .header--title{
     margin-right: auto;
 }
+
+.toggle--container{
+    display: flex;
+    padding: 1em;
+}

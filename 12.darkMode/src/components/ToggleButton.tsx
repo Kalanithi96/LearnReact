@@ -5,7 +5,7 @@ export default function ToggleButton(props: {
   handleChange: () => void;
 }) {
   return (
-    <div>
+    <div className="toggle--container">
       <p>{props.option1}</p>
       <input
         type="checkbox"
