@@ -9,7 +9,7 @@ export default function Header(props: {
     <header>
       <nav className="navbar">
         <img src={react} className="header--logo"/>
-        <h2>React Facts</h2>
+        <h2 className="header--title">React Facts</h2>
         <ToggleButton
           option1="Light"
           option2="Dark"
