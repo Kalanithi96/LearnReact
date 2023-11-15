@@ -5,6 +5,8 @@
 .navbar {
   display: flex;
   align-items: center;
+  padding: 2em;
+  box-shadow: 0px 2.98px 7.45px rgba(0,0,0,0.2);
 }
 
 .header--logo {
@@ -14,6 +16,7 @@
 
 .header--title {
   margin-right: auto;
+  color: #61DBFB;
 }
 
 .toggle--container {
