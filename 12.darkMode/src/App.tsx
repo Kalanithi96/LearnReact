@@ -13,7 +13,9 @@ function App() {
   return (
     <>
       <Header value={isDarkMode} handleChange={handleChange} />
-      <Content />
+      <main>
+        <Content />
+      </main>
     </>
   );
 }

@@ -78,30 +78,25 @@
     background-color: #777;
 }
 
+main{
+  padding:4em;
+}
+
 .content--title{
-  margin: 1em 0em 1em 1em;
   font-size: 4em;
 }
 
 .content--list{
-  margin: 0em 0em 0em 4em;
-  font-size: large;
-  list-style: none;
+  padding: 4em;
 }
 
-.content--list li::before{
-  content: "\2022";
-  color:#61DBFB;
-  font-weight: bold;
+.content--list > li{
   font-size: larger;
-  width: 1em;
-  margin-left: -1em;
-  display: inline-block;
 }
 
-.content--list li{
-  margin: 1em;
-  font-size: larger;
+.content--list > li::marker{
+  font-size: 1.5em;
+  color: #61DBFB;
 }
 
 .bg--img{
