@@ -7,6 +7,7 @@
   align-items: center;
   padding: 2em;
   box-shadow: 0px 2.98px 7.45px rgba(0,0,0,0.2);
+  height: 10vh;
 }
 
 .header--logo {
@@ -79,7 +80,12 @@
 }
 
 main{
-  padding:4em;
+  padding:3em;
+  height: 70vh;
+  background-image: url("./assets/react-bg.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
 }
 
 .content--title{
@@ -87,7 +93,7 @@ main{
 }
 
 .content--list{
-  padding: 4em;
+  padding: 3em;
 }
 
 .content--list > li{
@@ -97,13 +103,4 @@ main{
 .content--list > li::marker{
   font-size: 1.5em;
   color: #61DBFB;
-}
-
-.bg--img{
-  position: absolute;
-  top: 25vh;
-  right:-25vh;
-  color: #ccc;
-  z-index: -1;
-  height: 50vh;
 }
