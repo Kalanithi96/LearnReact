@@ -12,7 +12,12 @@ type Note = {
 }
 
 function App() {
-  const [notes, setNotes] = useState<Array<Note>>(localStorage.getItem("notes")===null? [] : JSON.parse(localStorage.getItem("notes") as string));
+  const [notes, setNotes] = useState<Array<Note>>(
+    () => {
+      console.log("Pulling data")
+      return localStorage.getItem("notes")===null? [] : JSON.parse(localStorage.getItem("notes") as string)
+    }
+  );
   const [currentNoteId, setCurrentNoteId] = useState(
     (notes[0] && notes[0].id) || ""
   );
