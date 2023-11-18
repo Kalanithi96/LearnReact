@@ -2,11 +2,28 @@
   margin: 0;
 }
 
-.navbar {
+nav {
   display: flex;
   align-items: center;
   padding: 2em;
-  box-shadow: 0px 2.98px 7.45px rgba(0,0,0,0.2);
+  box-shadow: 0px 2.98px 7.45px rgba(0, 0, 0, 0.2);
+  height: 10vh;
+}
+
+.dark{
+  background-color: black;
+  color: white;
+  z-index: -1;
+}
+
+.nav--dark{
+  box-shadow: 0px 2.98px 7.45px rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  position: relative;
+}
+
+.main--dark{
+  background-color: #040f11;
 }
 
 .header--logo {
@@ -78,37 +95,28 @@
     background-color: #777;
 }
 
+main{
+  padding:3em;
+  height: 80vh;
+  background-image: url("./assets/react-bg.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+
 .content--title{
-  margin: 1em 0em 1em 1em;
   font-size: 4em;
 }
 
 .content--list{
-  margin: 0em 0em 0em 4em;
-  font-size: large;
-  list-style: none;
+  padding: 3em;
 }
 
-.content--list li::before{
-  content: "\2022";
-  color:#61DBFB;
-  font-weight: bold;
-  font-size: larger;
-  width: 1em;
-  margin-left: -1em;
-  display: inline-block;
-}
-
-.content--list li{
-  margin: 1em;
+.content--list > li{
   font-size: larger;
 }
 
-.bg--img{
-  position: absolute;
-  top: 25vh;
-  right:-25vh;
-  color: #ccc;
-  z-index: -1;
-  height: 50vh;
+.content--list > li::marker{
+  font-size: 1.5em;
+  color: #61DBFB;
 }

@@ -1,5 +1,3 @@
-import logo from "./../assets/react-bg.svg"
-
 export default function Content() {
   return (
         <div>
@@ -11,7 +9,6 @@ export default function Content() {
                 <li>Is maintained by Facebook</li>
                 <li>Powers thousands of enterprise apps, including mobile apps</li>
             </ul>
-            <img src={logo} className="bg--img"/>
         </div>
     );
 }
