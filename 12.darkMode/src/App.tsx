@@ -12,8 +12,8 @@ function App() {
 
   return (
     <>
-      <Header value={isDarkMode} handleChange={handleChange} />
-      <main>
+      <Header isDark={isDarkMode} handleChange={handleChange} />
+      <main className={(isDarkMode)?"dark main--dark":""}>
         <Content />
       </main>
     </>

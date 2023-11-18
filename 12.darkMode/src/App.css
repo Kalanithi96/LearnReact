@@ -2,12 +2,28 @@
   margin: 0;
 }
 
-.navbar {
+nav {
   display: flex;
   align-items: center;
   padding: 2em;
-  box-shadow: 0px 2.98px 7.45px rgba(0,0,0,0.2);
+  box-shadow: 0px 2.98px 7.45px rgba(0, 0, 0, 0.2);
   height: 10vh;
+}
+
+.dark{
+  background-color: black;
+  color: white;
+  z-index: -1;
+}
+
+.nav--dark{
+  box-shadow: 0px 2.98px 7.45px rgba(255, 255, 255, 0.1);
+  z-index: 1;
+  position: relative;
+}
+
+.main--dark{
+  background-color: #040f11;
 }
 
 .header--logo {
@@ -81,7 +97,7 @@
 
 main{
   padding:3em;
-  height: 70vh;
+  height: 80vh;
   background-image: url("./assets/react-bg.svg");
   background-repeat: no-repeat;
   background-position-x: right;
